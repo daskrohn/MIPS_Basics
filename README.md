@@ -42,7 +42,7 @@ plink --vcf rbd.PTRHD1.30x.up-to-MIP79_annotated.recode.vcf --pheno pheno.txt \
 
 Time for quality control! This script is also downloadable in this repository.  
 This filters for:  
-* genotype missingness
+* genotype missingness (80% in this script)
 * sample-level missingness (80% in this script)
 * hardy-weinberg equilibrium 
 * differential missingness in cases vs controls 
