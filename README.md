@@ -26,5 +26,6 @@ module load vcftools
 # --recode + --recode-INFO-all: recodes a new VCF, including all annotations
 
 
-vcftools --gzvcf all_genes.all_samples.up-to-MIP79_annotated.vcf.gz --chr 2 --from-bp 25013036 --to-bp 25016351 --minDP 30 --keep keep.txt --recode --recode-INFO-all --out YOUR_DIRECTORY/rbd.PTRHD1.30x.up-to-MIP79_annotated
+vcftools --gzvcf all_genes.all_samples.up-to-MIP79_annotated.vcf.gz --chr 2 --from-bp 25013036 --to-bp 25016351 \
+--keep keep.txt --minDP 30 --recode --recode-INFO-all --out YOUR_DIRECTORY/rbd.PTRHD1.30x.up-to-MIP79_annotated
 ````
