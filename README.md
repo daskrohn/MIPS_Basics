@@ -6,7 +6,7 @@
 All GOLab MIP data is stored on Beluga at ~/runs/go_lab/mips/unfiltered. **Do not modify these files!!** Create a directory for your project and gene within your own home directory, and send every output there.  
   
 First, make a spreadsheet of the samples you are going to use (by Snumber), their phenotype (1 for control, 2 for case, -9 for unknown), and any sample covariates (usually sex and age). Your spreadsheet should include FID (Snumber), IID (Snumber again), and a column for each covariate. Make sure your covariates are clean (e.g. replace any 0's in age for NA).  
-**GO LAB TIP:** In the database there is a column called "Exclude from analysis". When choosing your cohorts, only select those with "keep", "NA", or "blank" in this column. Samples who have been sent for GWAS genotyping have been vetted for duplicates, sex mismatch, and non-European ancestry; if they pass, they receive a "keep" label. Those who haven't gone for genotyping yet have no value (NA or blank), and we keep them for now.   
+**GO LAB TIP:** In the database there is a column called "Exclude from analysis". When choosing your cohorts, only select those with "keep", "NA", or "blank" in this column. Samples who have been sent for GWAS genotyping have been vetted for duplicates, sex mismatch, and non-European ancestry; if they pass, they receive a "keep" label. Those who haven't gone for genotyping yet have no value (NA or blank), and we keep them for now. *You can download the latest database spreadsheet from the Slack channel #database_updates.*  
   
 Once your cohort is ready, make the following files in your project/gene directory:
 * *keep.txt*: the FID and IID of the samples you will keep.  
