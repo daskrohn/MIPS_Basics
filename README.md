@@ -14,7 +14,7 @@ Once your cohort is ready, make the following files in your project/gene directo
 * *sex.txt*: columns FID, IID, and SEX (1, 2, or 0).  
 * *covar.txt*: columns FID, IID, SEX, AGE, ...ANY OTHER COVARS.  
   
-Now, select your gene from the MIP data by its coordinates (you can find these on https://genome.ucsc.edu/, choose hg19). Add a 150 bp window on either side, just to make sure you capture everything that the MIPs captured. 
+Now, select your gene from the MIP data by its coordinates (you can find these on https://genome.ucsc.edu/, choose hg19). Add a 100 bp window on either side, just to make sure you capture everything that the MIPs captured. 
 
 ````
 # Example coordinates for gene PTRHD1 and RBD cohort 
