@@ -27,8 +27,8 @@ module load vcftools
 # --recode + --recode-INFO-all: recodes a new VCF, including all annotations
 
 
-vcftools --gzvcf all_genes.all_samples.up-to-MIP79_annotated.vcf.gz --chr 2 --from-bp 25013036 --to-bp 25016351 \
---keep keep.txt --minDP 30 --recode --recode-INFO-all --out YOUR_DIRECTORY/rbd.PTRHD1.30x.up-to-MIP79_annotated
+vcftools --gzvcf ~/runs/go_lab/mips/unfiltered/all_genes.all_samples.up-to-MIP79_annotated.vcf.gz --chr 2 --from-bp 25013036 --to-bp 25016351 \
+--keep keep.txt --minDP 30 --recode --recode-INFO-all --out rbd.PTRHD1.30x.up-to-MIP79_annotated
 ````
 
 Now transform your VCF into plink files: 
