@@ -22,7 +22,8 @@ Now, select your gene from the MIP data by its coordinates (you can find these o
 module load vcftools
 
 # --keep: keeps only your selected samples
-# --minDP: chooses minimum depth of coverage for inclusion of variants. You can choose 15x, 30x, 50x. I like 30x, some people do all 3. 
+# --minDP: chooses minimum depth of coverage for inclusion of variants. 
+#           You can choose 15x, 30x, 50x. I like 30x, some people do all 3. 
 # --recode + --recode-INFO-all: recodes a new VCF, including all annotations
 
 
