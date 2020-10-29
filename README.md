@@ -30,3 +30,10 @@ module load vcftools
 vcftools --gzvcf all_genes.all_samples.up-to-MIP79_annotated.vcf.gz --chr 2 --from-bp 25013036 --to-bp 25016351 \
 --keep keep.txt --minDP 30 --recode --recode-INFO-all --out YOUR_DIRECTORY/rbd.PTRHD1.30x.up-to-MIP79_annotated
 ````
+
+Now transform your VCF into plink files: 
+````
+cd YOUR_DIRECTORY
+module load plink 
+
+plink --vcf rbd.PTRHD1.30x.up-to-MIP79_annotated.recode.vcf --pheno pheno.txt --update-sex sex.txt --make-bed --out unfiltered_PTRHD1
